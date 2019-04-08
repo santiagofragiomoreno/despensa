@@ -6,7 +6,7 @@ include "functions.php";
 $ruta = explode("/",$_SERVER['REQUEST_URI']);
 $profundidad_directorios = 2;
 $directorio_base = "http://localhost/despensa/";
-$ruta_api = "http://localhost/despensa/";
+$ruta_api = "http://localhost/despensa/API";
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($ruta);
 }
