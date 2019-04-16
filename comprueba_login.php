@@ -6,16 +6,15 @@ if(isset($_POST['email']) && isset($_POST['contrasena'])){
                          "argumentos" => array( "email"       => $_POST['email'],
                                                 "contrasena"  => $_POST['contrasena'])
     );
-    $login = conexion($argumentos);
+    $usuario = conexion($argumentos);
     // decodificamos el json que nos develve la llamada a comprueba_login
-    //lo recogemos en un array
-    print_r($login);
-    $tipo = gettype($login);
-    $login = json_decode($login);
-    $tipo2 = gettype($login);
-    print_r($login);
-    if($login['resultado'] == 'ok'){
-        redirect($directorio_base."login");
+    //lo recogemos en un objeto
+    $usuario = json_decode($usuario,false);
+    if($usuario != null){
+        $_SESSION['id_usuario'] = $usuario->id;
+        $_SESSION['email_usuario'] = $usuario->email;
+        $_SESSION['nombre_usuario'] = $usuario->nombre;
+        redirect($directorio_base."home");
     }
     else{
         redirect($directorio_base."login");

@@ -20,7 +20,7 @@ $msg  = array("error" => "Acceso Denegado");
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($url);
 }
-print_r($url);
+//print_r($url);
 
 //preguntamos si el TOKEN es valido
 //$ruta[count($ruta)-1] --- siempre recogerá el ultimo valor del array $ruta (que en este caso sera el token)
@@ -33,6 +33,9 @@ if(($token-6)%7 == 0){
         switch ($url[0]){
             case 'comprueba_login':
                 include "comprueba_login.php"; //nos vamos a comprueba_login
+                break;
+            case 'inserta_registro':
+                include "inserta_registro.php"; //nos vamos a comprueba_login
                 break;
             /*case 'comprueba_codigo':
                 //venimos de la Raspberry y comprobamos los campos que nos manda
@@ -60,11 +63,11 @@ if(($token-6)%7 == 0){
         }
     }
     //si en la ruta tenemos --- accion/id/token, comprobamos si el id es valido
-    else if(count($ruta) == 3){
+    else if(count($url) == 3){
         //comprobamos si el id que nos viene en la url es realmente un id numerico------> accion/id/token
-        if(is_numeric($ruta[1])){
-            $id_consulta = $ruta[1];
-            switch ($ruta[0]){
+        if(is_numeric($url[1])){
+            $id_consulta = $url[1];
+            switch ($url[0]){
                 /*
                 case 'ponentes':
                     include "ponentes.php";

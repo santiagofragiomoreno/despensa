@@ -4,9 +4,16 @@
  * esta vista envia los campos de email
  * y password a comprueba_login.php
  */
+$directorio_base = "http://localhost/despensa/";
+if(isset($_POST['usuario'])){
+    if(session_destroy()){
+        $_SESSION['nombre_usuario']="sesion destruida";
+        
+    }
+}
 ?>
 
-<form action="http://localhost/despensa/comprueba_login" method="POST">
+<form action="<?php echo $directorio_base."comprueba_login"?>" method="POST">
     <p> email </p>
 	<input type ="text" name="email">
 	<p> password </p>
@@ -14,6 +21,6 @@
 	<button type="submit">ENVIAR</button>
 </form>
 <p></p>
-<form action="http://localhost/proyecto/APP/registro">
+<form action="<?php echo $directorio_base."registro"?>">
 	<button type="submit">REGISTARSE</button>
 </form>

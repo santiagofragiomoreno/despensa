@@ -26,6 +26,6 @@ function conexion($argumentos){
         curl_setopt($conexion, CURLOPT_POSTFIELDS, $argumentos['argumentos']);
     }
     $resultado = curl_exec($conexion);
-    $resultado = gettype($resultado);
+    curl_close($conexion);
     return $resultado;
 }

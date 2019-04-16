@@ -1,12 +1,13 @@
 <?php
 //----------------------------------------------
+session_start();
 include "functions.php";
 //convertimos la ruta introducida en el navegador 
 //a un array de tantos elemento como esten separados por / en la URL
 $ruta = explode("/",$_SERVER['REQUEST_URI']);
 $profundidad_directorios = 2;
 $directorio_base = "http://localhost/despensa/";
-$ruta_api = "http://localhost/despensa/API";
+$ruta_api = "http://localhost/despensa/API/";
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($ruta);
 }
@@ -30,7 +31,7 @@ if(isset($ruta[0])){
             //si venimos con un email y una contraseña
             if(isset($_POST['email']) && isset($_POST['contrasena'])){
                 if(($_POST['email'] != '') && ($_POST['contrasena'] != '')){
-                    $pagina = 8;
+                    $pagina = 2;
                 }
                 else{
                     redirect($directorio_base."login");
@@ -39,6 +40,17 @@ if(isset($ruta[0])){
             else{
                 redirect($directorio_base."login");
             }
+            break;
+        case "home":
+            $pagina = 1;
+            break;
+        
+        case "registro":
+            $pagina = 3;
+            break;
+        
+        case "realiza_registro":
+            $pagina = 4;
             break;
         
         default:
@@ -59,6 +71,11 @@ switch($pagina){
     case 2:
         include "comprueba_login.php";
         break;
-   
+    case 3:
+        include "registro.php";
+        break;
+    case 4:
+        include "realiza_registro.php";
+        break;
 }
 ?>
