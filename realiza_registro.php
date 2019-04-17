@@ -13,6 +13,7 @@ if(isset($_POST['email']) && isset($_POST['contrasena'])){
     // decodificamos el json que nos develve la llamada a realiza_registro
     //lo recogemos en un objeto
     $usuario = json_decode($usuario,false);
+    //si el registro es correcto nos vamos al login
     if($usuario->resultado == 'ok'){
         redirect($directorio_base."login");
     }

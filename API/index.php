@@ -68,10 +68,20 @@ if(($token-6)%7 == 0){
         if(is_numeric($url[1])){
             $id_consulta = $url[1];
             switch ($url[0]){
-                /*
-                case 'ponentes':
-                    include "ponentes.php";
+                
+                case 'productos_usuario':
+                    //el id lo tenemos en $id_consulta
+                    include "productos_usuario.php";
                     break;
+                case 'productos_disponibles':
+                    //el id lo tenemos en $id_consulta
+                    include "productos_disponibles.php";
+                    break;
+                case 'consumo_producto':
+                    //el id lo tenemos en $id_consulta
+                    include "consumo_producto.php";
+                    break;
+                 /*
                 case 'ponencias':
                     include "ponencias.php";
                     break;

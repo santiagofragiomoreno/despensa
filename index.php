@@ -52,7 +52,23 @@ if(isset($ruta[0])){
         case "realiza_registro":
             $pagina = 4;
             break;
+            
+        case "productos":
+            $pagina = 5;
+            break;
+            
+        case "productos_disponibles":
+            $pagina = 6;
+            break;
         
+        case "info_producto":
+            if(isset($ruta[1]) && isset($ruta[2])){
+                $pagina = 7;
+            }
+            else{
+                redirect($directorio_base."login");
+            }
+            break;
         default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
           
@@ -61,6 +77,8 @@ if(isset($ruta[0])){
             break;
     }
 }
+include 'header.php';
+include 'footer.php';
 switch($pagina){
     case 0:
         include "login.php";
@@ -76,6 +94,15 @@ switch($pagina){
         break;
     case 4:
         include "realiza_registro.php";
+        break;
+    case 5:
+        include "productos.php";
+        break;
+    case 6:
+        include "productos_disponibles.php";
+        break;
+    case 7:
+        include "info_producto.php";
         break;
 }
 ?>
