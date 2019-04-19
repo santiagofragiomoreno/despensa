@@ -23,6 +23,7 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
     if($resultado->num_rows == 0 ){
         //enviamos email----> hacemos uso de PHPmailer();
         // Instantiation and passing `true` enables exceptions
+        /*
         $mail = new PHPMailer(true);
         try {
             //Server settings
@@ -48,6 +49,7 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
              $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name*/
             
             // Content
+            /*
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'Producto no existe en Base de Datos';
             $mail->Body    = //'Para dar de alta el producto, haga click en el siguiente enlce:\n localhost/APP/alta_producto/'.$params;
@@ -57,8 +59,8 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
             //echo 'El mensaje se envio correctamente';
         } catch (Exception $e) {
             //echo "Error al enviar el mensaje. Mailer Error: {$mail->ErrorInfo}";
-        }
-        //echo $existe_producto;
+        }*/
+        echo $existe_producto;
     }
     else{
         echo $existe_producto = 1;
