@@ -1,6 +1,6 @@
 <?php
 ///////// conexion BBDD ////////
-$conexion = new mysqli('localhost','u823703154_santi','root','proyecto');
+$conexion = new mysqli('localhost','u823703154_despe','santiago87','u823703154_despe');
 $conexion->set_charset('utf8');
 //comprobamos si no hay errores en la conexion
 if($conexion->connect_error){
