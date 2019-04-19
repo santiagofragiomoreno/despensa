@@ -12,9 +12,10 @@ if($conexion->connect_error){
 //include 'Exception.php';
 include 'PHPMailer.php';
 include 'SMTP.php';
+$existe_producto = 0;
 //comprobamos si nos llegan los parametros de la RASPBERRY
 if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
-    $existe_producto = 0;
+   
     //comprobamos en la tabla de productos
     $consulta = "SELECT codigo_producto FROM productos WHERE id_usuario =".$_POST['usuario']." AND codigo_producto =".$_POST['codigo_producto'];
     $resultado = $conexion->query($consulta);
@@ -65,4 +66,7 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
     else{
         echo $existe_producto = 1;
     }
+}
+else{
+    echo $existe_producto;
 }
