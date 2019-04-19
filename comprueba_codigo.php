@@ -61,12 +61,12 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
         } catch (Exception $e) {
             //echo "Error al enviar el mensaje. Mailer Error: {$mail->ErrorInfo}";
         }
-        echo $existe_producto = 2;
+        echo $existe_producto;
     }
     else{
         echo $existe_producto = 1;
     }
 }
 else{
-    echo $existe_producto;
+    echo $existe_producto = 2;
 }
