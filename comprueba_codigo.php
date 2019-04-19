@@ -10,7 +10,7 @@ if($conexion->connect_error){
     die ($conexion->connect_error);
     echo "Error en la conexion con la Base de Datos";
 }
-//include 'Exception.php';
+include 'Exception.php';
 include 'PHPMailer.php';
 include 'SMTP.php';
 $existe_producto = 0;
@@ -24,14 +24,14 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
     if($resultado->num_rows == 0 ){
         //enviamos email----> hacemos uso de PHPmailer();
         // Instantiation and passing `true` enables exceptions
-        $mail = new PHPMailer();$mail = new PHPMailer();
+        $mail = new PHPMailer();
         $mail->IsSMTP();
-        $mail->Host = "smtp1.gmail.com";
+        $mail->Host = "smtp.hostinger.es";
         $mail->SMTPAuth = true;
-        $mail->Username = 'santiagofragio@gmail.com';
+        $mail->Username = 'santi@miwebdepruebas.es';
         $mail->Password = 'santiago87';
         
-        $mail->From="santiagofragio@gmail.com";
+        $mail->From="santi@miwebdepruebas.es";
         $mail->FromName="santiago";
         $mail->Sender="santiagofragio@gmail.com";
         //$mail->AddReplyTo("replies@midominio.com", "Responder a....");
