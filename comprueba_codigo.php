@@ -21,15 +21,12 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
     $resultado = $conexion->query($consulta);
     //si $resultado->num_rows == 0 -----> mandamos email con el link para insertar el nuevo producto
     if($resultado->num_rows == 0 ){
-        $c = 3;//$_GET['codigo_producto'];
-        $u = 4 ;// $_GET['usuario'];
-        $params = array($c,$u);
         //enviamos email----> hacemos uso de PHPmailer();
         // Instantiation and passing `true` enables exceptions
         $mail = new PHPMailer(true);
         try {
             //Server settings
-            $mail->SMTPDebug = 0;                                       // Enable verbose debug output
+            //$mail->SMTPDebug = 0;                                       // Enable verbose debug output
             $mail->isSMTP();                                            // Set mailer to use SMTP
             $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
@@ -61,7 +58,7 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
         } catch (Exception $e) {
             //echo "Error al enviar el mensaje. Mailer Error: {$mail->ErrorInfo}";
         }
-        echo $existe_producto;
+        //echo $existe_producto;
     }
     else{
         echo $existe_producto = 1;
