@@ -20,7 +20,7 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
     $consulta = "SELECT codigo_producto FROM productos WHERE id_usuario =".$_POST['usuario']." AND codigo_producto =".$_POST['codigo_producto'];
     $resultado = $conexion->query($consulta);
     //si $resultado->num_rows == 0 -----> mandamos email con el link para insertar el nuevo producto
-    if($resultado->num_rows == 0 ){
+    if($resultado == 0 ){
         $c = 3;//$_GET['codigo_producto'];
         $u = 4 ;// $_GET['usuario'];
         $params = array($c,$u);
