@@ -57,12 +57,12 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
             $mail->AltBody = 'esta es el cuerpo del mensaje para los clientes';
             
             $mail->send();
-            echo 'El mensaje se envio correctamente';
+            //echo 'El mensaje se envio correctamente';
         } catch (Exception $e) {
-            echo "Error al enviar el mensaje. Mailer Error: {$mail->ErrorInfo}";
+            //echo "Error al enviar el mensaje. Mailer Error: {$mail->ErrorInfo}";
         }
+        echo $existe_producto = 2;
     }
-    
     else{
         echo $existe_producto = 1;
     }
