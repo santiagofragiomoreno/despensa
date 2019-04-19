@@ -4,7 +4,7 @@
  * esta vista envia los campos de email
  * y password a comprueba_login.php
  */
-$directorio_base = "http://localhost/despensa/";
+$directorio_base = "http://www.miwebdepruebas.es/despensa/";
 if(isset($_POST['usuario'])){
     if(session_destroy()){
         $_SESSION['nombre_usuario']="sesion destruida";

@@ -2,13 +2,13 @@
 //----------------------------------------------
 session_start();
 include "functions.php";
-const DIRECTORIO_BASE = "http://localhost/despensa/";
+const DIRECTORIO_BASE = "http://www.miwebdepruebas.es/despensa/";
 //convertimos la ruta introducida en el navegador 
 //a un array de tantos elemento como esten separados por / en la URL
 $ruta = explode("/",$_SERVER['REQUEST_URI']);
 $profundidad_directorios = 2;
-$directorio_base = "http://localhost/despensa/";
-$ruta_api = "http://localhost/despensa/API/";
+$directorio_base = "http://www.miwebdepruebas.es/despensa/";
+$ruta_api = "http://www.miwebdepruebas.es/despensa/API/";
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($ruta);
 }
