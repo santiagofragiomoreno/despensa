@@ -16,7 +16,7 @@ include 'SMTP.php';
 if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
     $existe_producto = 0;
     //comprobamos en la tabla de productos
-    $consulta = "SELECT codigo_producto FROM productos WHERE id_usuario =".$_POST['usuario']." ANDWHERE codigo_producto =".$_POST['codigo_producto'];
+    $consulta = "SELECT codigo_producto FROM productos WHERE id_usuario =".$_POST['usuario']." AND codigo_producto =".$_POST['codigo_producto'];
     $resultado = $conexion->query($consulta);
     //si $resultado->num_rows == 0 -----> mandamos email con el link para insertar el nuevo producto
     if($resultado == false ){
