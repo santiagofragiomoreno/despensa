@@ -1,5 +1,5 @@
 <?php
-$ruta_api = "http://www.miwebdepruebas.es/despensa/API/";
+$ruta_api = "http://www.miwebdepruebas.es/API/";
 if(isset($_POST['email']) && isset($_POST['contrasena'])){
     //mandamos la info a la API
     $argumentos = array( "url"        => $ruta_api."comprueba_login/".token(),

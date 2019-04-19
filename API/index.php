@@ -15,7 +15,7 @@ if($conexion->connect_error){
  */
 //obtenemos la url y la separamos en un array
 $url = explode("/",$_SERVER['REQUEST_URI']);
-$profundidad_directorios = 3;
+$profundidad_directorios = 2;
 $msg  = array("error" => "Acceso Denegado");
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($url);
