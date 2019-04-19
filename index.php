@@ -2,6 +2,7 @@
 //----------------------------------------------
 session_start();
 include "functions.php";
+const DIRECTORIO_BASE = "http://localhost/despensa/";
 //convertimos la ruta introducida en el navegador 
 //a un array de tantos elemento como esten separados por / en la URL
 $ruta = explode("/",$_SERVER['REQUEST_URI']);

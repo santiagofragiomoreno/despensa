@@ -37,6 +37,12 @@ if(($token-6)%7 == 0){
             case 'inserta_registro':
                 include "inserta_registro.php"; //nos vamos a comprueba_login
                 break;
+            case 'comprueba_codigo':
+                //venimos de la Raspberry y comprobamos los campos que nos manda
+                if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
+                    include "comprueba_codigo.php";
+                }
+                break;
             /*case 'comprueba_codigo':
                 //venimos de la Raspberry y comprobamos los campos que nos manda
                 if(isset($_POST['codigo_producto']) && isset($_POST['usuario']) && isset($_POST['contrasena'])){
