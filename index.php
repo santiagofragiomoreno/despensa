@@ -70,6 +70,9 @@ if(isset($ruta[0])){
                 redirect($directorio_base."login");
             }
             break;
+        case "comprueba_codigo":
+            $pagina = 8;
+            break;
         default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
           
@@ -104,6 +107,9 @@ switch($pagina){
         break;
     case 7:
         include "info_producto.php";
+        break;
+    case 8:
+        include "comprueba_codigo.php";
         break;
 }
 ?>
