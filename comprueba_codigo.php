@@ -2,6 +2,10 @@
 use PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require("class.phpmailer.php");
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 ///////// conexion BBDD ////////
 $conexion = new mysqli('localhost','u823703154_despe','santiago87','u823703154_despe');
 $conexion->set_charset('utf8');
@@ -22,36 +26,14 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
     $resultado = $conexion->query($consulta);
     //si $resultado->num_rows == 0 -----> mandamos email con el link para insertar el nuevo producto
     if($resultado->num_rows == 0 ){
-        //enviamos email----> hacemos uso de PHPmailer();
-        // Instantiation and passing `true` enables exceptions
-        $mail = new PHPMailer();
-        $mail->IsSMTP();
-        $mail->Host = "smtp.hostinger.es";
-        $mail->SMTPAuth = true;
-        $mail->Username = 'santi@miwebdepruebas.es';
-        $mail->Password = 'santiago87';
+        // El mensaje
+        $mensaje = "Producto no encontrado en la base de datos";
         
-        $mail->From="santi@miwebdepruebas.es";
-        $mail->FromName="santiago";
-        $mail->Sender="santiagofragio@gmail.com";
-        //$mail->AddReplyTo("replies@midominio.com", "Responder a....");
+        // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
+        //$mensaje = wordwrap($mensaje, 70, "\r\n");
         
-        $mail->AddAddress("santiagofragio@gmail.com"); ### Destinatario....
-        //$mail->AddAddress("email2@example.com"); ### Mas Destinatarios....
-        //$mail->AddAddress("email3@example.com"); ### Mas Destinatarios....
-        
-        $mail->Subject = "error en producto";
-        
-        $mail->IsHTML(true);
-        //$mail->AddEmbeddedImage('logo.jpg', 'logoimg', 'logo.jpg'); // Adjuntar imagenes, recuerda colocar la ruta absoluta de la imagen donde esta almacenada en su servidor.
-        $mail->Body = "<h1>este es un mensaje de error para un cliente</h1>";
-        //$mail->AltBody="CONTENIDO ALTERNATIVO EN Texto Plano";
-        
-        if(!$mail->Send()){
-            echo "Error sending: " . $mail->ErrorInfo;;
-        }else{
-            echo "Letter is sent";
-        }
+        // Enviarlo
+        mail('santiagofragio@gmail.com', 'Error en Producto', $mensaje);
         /*
         $mail = new PHPMailer(true);
         try {
