@@ -26,14 +26,15 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
     $resultado = $conexion->query($consulta);
     //si $resultado->num_rows == 0 -----> mandamos email con el link para insertar el nuevo producto
     if($resultado->num_rows == 0 ){
-        // El mensaje
-        $mensaje = "Producto no encontrado en la base de datos";
-        
-        // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
-        //$mensaje = wordwrap($mensaje, 70, "\r\n");
-        
-        // Enviarlo
-        mail('santiagofragio@gmail.com', 'Error en Producto', $mensaje);
+        ini_set( 'display_errors', 1 );
+        error_reporting( E_ALL );
+        $from = "santi@miwebdepruebas.es";
+        $to = "santiagofragio@gmail.com";
+        $subject = "Checking PHP mail";
+        $message = "PHP mail works just fine";
+        $headers = "From:" . $from;
+        mail($to,$subject,$message, $headers);
+        echo "The email message was sent.";
         /*
         $mail = new PHPMailer(true);
         try {
