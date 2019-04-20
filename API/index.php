@@ -43,11 +43,16 @@ if(($token-6)%7 == 0){
                     include "comprueba_codigo.php";
                 }
                 break;
-            
             case 'producto_in':
                 //cuando introducimos un producto en el armario
                 if(isset($_POST['codigo_producto']) && isset($_POST['peso']) && isset($_POST['usuario'])){
                     include "producto_in.php";
+                }
+                break;
+            case 'producto_out':
+                //cuando sacamos un producto en el armario
+                if(isset($_POST['codigo_producto']) && isset($_POST['peso']) && isset($_POST['usuario'])){
+                    include "producto_out.php";
                 }
                 break;
             /*
