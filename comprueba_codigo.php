@@ -1,11 +1,4 @@
 <?php
-use PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require("class.phpmailer.php");
-
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
 ///////// conexion BBDD ////////
 $conexion = new mysqli('localhost','u823703154_despe','santiago87','u823703154_despe');
 $conexion->set_charset('utf8');
@@ -14,18 +7,15 @@ if($conexion->connect_error){
     die ($conexion->connect_error);
     echo "Error en la conexion con la Base de Datos";
 }
-include 'Exception.php';
-include 'PHPMailer.php';
-include 'SMTP.php';
 $existe_producto = 0;
 //comprobamos si nos llegan los parametros de la RASPBERRY
 if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
-   
     //comprobamos en la tabla de productos
     $consulta = "SELECT codigo_producto FROM productos WHERE id_usuario =".$_POST['usuario']." AND codigo_producto =".$_POST['codigo_producto'];
     $resultado = $conexion->query($consulta);
     //si $resultado->num_rows == 0 -----> mandamos email con el link para insertar el nuevo producto
     if($resultado->num_rows == 0 ){
+        
         ini_set( 'display_errors', 1 );
         error_reporting( E_ALL );
         $from = "santi@miwebdepruebas.es";
@@ -34,7 +24,7 @@ if(isset($_POST['codigo_producto']) && isset($_POST['usuario'])){
         $message = "PHP mail works just fine";
         $headers = "From:" . $from;
         mail($to,$subject,$message, $headers);
-        echo "The email message was sent.";
+        
         /*
         $mail = new PHPMailer(true);
         try {
