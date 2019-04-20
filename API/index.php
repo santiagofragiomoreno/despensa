@@ -43,17 +43,14 @@ if(($token-6)%7 == 0){
                     include "comprueba_codigo.php";
                 }
                 break;
-            /*case 'comprueba_codigo':
-                //venimos de la Raspberry y comprobamos los campos que nos manda
-                if(isset($_POST['codigo_producto']) && isset($_POST['usuario']) && isset($_POST['contrasena'])){
-                    include "comprueba_codigo.php";
-                }
-                break;
-            case 'in':
+            
+            case 'producto_in':
+                //cuando introducimos un producto en el armario
                 if(isset($_POST['codigo_producto']) && isset($_POST['peso']) && isset($_POST['usuario'])){
-                    include "in.php";
+                    include "producto_in.php";
                 }
                 break;
+            /*
             case 'out':
                 include "out.php";
                 break;
