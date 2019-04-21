@@ -9,6 +9,6 @@
 <body>
 <?php if($pagina > 0){?>
 		<p style="border: 1px solid #000">
-			<a href="<?php echo $directorio_base;?>">HOME</a>
+			<a href="<?php echo DIRECTORIO_BASE."home";?>">HOME</a>
 		</p>
 <?php }?>
