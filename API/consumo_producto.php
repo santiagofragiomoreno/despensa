@@ -19,7 +19,7 @@ if(isset($id_consulta) && isset($_POST['id_producto'])){
             $consumo[$contador]['id_producto'] = $fila['id_producto'];
             $consumo[$contador]['id_usuario'] = $fila['id_usuario'];
             $consumo[$contador]['fecha_consumo'] = $fila['fecha_consumo'];
-            $consumo[$contador]['fecha_producto'] = $fila['fecha_producto'];
+            $consumo[$contador]['consumo_producto'] = $fila['consumo_producto'];
             $contador++;
         }
     }
