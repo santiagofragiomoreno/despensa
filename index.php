@@ -3,6 +3,7 @@
 session_start();
 include "functions.php";
 const DIRECTORIO_BASE = "http://www.miwebdepruebas.es/";
+const RUTA_API = "http://www.miwebdepruebas.es/API/";
 //convertimos la ruta introducida en el navegador 
 //a un array de tantos elemento como esten separados por / en la URL
 $ruta = explode("/",$_SERVER['REQUEST_URI']);
