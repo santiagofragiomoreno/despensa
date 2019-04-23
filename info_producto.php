@@ -4,12 +4,11 @@
  * relacionado con un producto y su usuario
  */
 if(isset($ruta[1]) && isset($ruta[2])){
-    $hay_consumo = false;
     //mandamos la info a la API
-    $argumentos = array( "url"        => $ruta_api."consumo_producto/".$_SESSION['id_usuario']."/".token(),
+    $argumentos = array( "url"        => RUTA_API."consumo_producto/".$_SESSION['id_usuario']."/".token(),
                          "metodo"     => "POST",
                          "argumentos" => array( "id_producto"       => $ruta[2],
-                                                "contrasena"        => "")
+                                                "usuario"           => $_SESSION['id_usuario']),
     );
     $consumo = conexion($argumentos);
     // decodificamos el json que nos develve la llamada a productos_usuario
@@ -19,7 +18,7 @@ if(isset($ruta[1]) && isset($ruta[2])){
         $hay_productos = true;
     }
     else{
-        redirect($directorio_base."home");
+        redirect(DIRECTORIO_BASE."home");
     }
 }
 ?>
