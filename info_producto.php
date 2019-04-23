@@ -9,7 +9,7 @@ if(isset($ruta[1]) && isset($ruta[2])){
     $argumentos = array( "url"        => RUTA_API."consumo_producto/".$ruta[1]."/".token(),
                          "metodo"     => "POST",
                          "argumentos" => array( "id_producto"       => $ruta[2],
-                                                "usuario"           => $_SESSION['id_usuario']),
+                                                "usuario"           => $ruta[1]),
     );
     $consumo = conexion($argumentos);
     // decodificamos el json que nos develve la llamada a productos_usuario
