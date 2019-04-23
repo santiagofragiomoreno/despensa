@@ -1,4 +1,5 @@
 <?php
+session_start();
 /*
  * pagina donde mostramos todo el consumo
  * relacionado con un producto y su usuario
