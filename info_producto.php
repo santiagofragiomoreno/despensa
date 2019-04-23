@@ -19,7 +19,7 @@ if(isset($ruta[1]) && isset($ruta[2])){
         $hay_productos = true;
     }
     else{
-        redirect(DIRECTORIO_BASE."home");
+        redirect(DIRECTORIO_BASE."login");
     }
 }
 ?>
