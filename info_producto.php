@@ -6,7 +6,7 @@ session_start();
  */
 if(isset($ruta[1]) && isset($ruta[2])){
     //mandamos la info a la API
-    $argumentos = array( "url"        => RUTA_API."consumo_producto/".$_SESSION['id_usuario']."/".token(),
+    $argumentos = array( "url"        => RUTA_API."consumo_producto/".$ruta[1]."/".token(),
                          "metodo"     => "POST",
                          "argumentos" => array( "id_producto"       => $ruta[2],
                                                 "usuario"           => $_SESSION['id_usuario']),
