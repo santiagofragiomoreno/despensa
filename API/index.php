@@ -74,6 +74,7 @@ if(($token-6)%7 == 0){
     else if(count($url) == 3){
         //comprobamos si el id que nos viene en la url es realmente un id numerico------> accion/id/token
         if(is_numeric($url[1])){
+            $id_consulta = $url[1];
             switch ($url[0]){
                 case 'productos_usuario':
                     //el id lo tenemos en $id_consulta
