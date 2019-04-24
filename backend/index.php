@@ -33,13 +33,13 @@ if(isset($ruta[0])){
          break;
          default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
-             redirect(RUTA_BACKEND."login");
+             redirect(RUTA_BACKEND."backend_login");
             break;
     }
 }
 switch($pagina){
     case 0:
-        include "login.php";
+        include "backend_login.php";
         break;
     case 1:
         include "comprueba_login_backend.php";
