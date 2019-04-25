@@ -10,7 +10,7 @@ const RUTA_API_BACKEND = "http://www.miwebdepruebas.es/BACKEND/API/";
 //convertimos la ruta introducida en el navegador 
 //a un array de tantos elemento como esten separados por / en la URL
 $ruta = explode("/",$_SERVER['REQUEST_URI']);
-$profundidad_directorios = 1;
+$profundidad_directorios = 2;
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($ruta);
 }
