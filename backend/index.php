@@ -5,8 +5,8 @@
  */
 //----------------------------------------------
 include "backend/functions.php";
-const RUTA_BACKEND = "http://www.miwebdepruebas.es/BACKEND/";
-const RUTA_API_BACKEND = "http://www.miwebdepruebas.es/BACKEND/API/";
+const RUTA_BACKEND = "http://www.miwebdepruebas.es/backend/";
+const RUTA_API_BACKEND = "http://www.miwebdepruebas.es/backend/API/";
 //convertimos la ruta introducida en el navegador 
 //a un array de tantos elemento como esten separados por / en la URL
 $ruta = explode("/",$_SERVER['REQUEST_URI']);
@@ -33,7 +33,7 @@ if(isset($ruta[0])){
          break;
          default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
-             redirect(RUTA_BACKEND."backend_login");
+             redirect(RUTA_BACKEND."backend_login.php");
             break;
     }
 }
