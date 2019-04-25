@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['email']) && isset($_POST['contrasena'])){
     //mandamos la info a la API
-    $argumentos = array( "url"        => $ruta_api."inserta_registro/".token(),
+    $argumentos = array( "url"        => RUTA_API."inserta_registro/".token(),
                          "metodo"     => "POST",
                          "argumentos" => array( "email"       => $_POST['email'],
                                                 "contrasena"  => $_POST['contrasena'],
@@ -15,9 +15,9 @@ if(isset($_POST['email']) && isset($_POST['contrasena'])){
     $usuario = json_decode($usuario,false);
     //si el registro es correcto nos vamos al login
     if($usuario->resultado == 'ok'){
-        redirect($directorio_base."login");
+        redirect(DIRECTORIO_BASE."login");
     }
     else{
-        redirect($directorio_base."registro");
+        redirect(DIRECTORIO_BASE."registro");
     }
 }

@@ -3,7 +3,7 @@ if(isset($_SESSION['id_usuario']) && $_SESSION['nombre_usuario'] != ''){
     $login = true;
 }
 else{
-    redirect($directorio_base."login");
+    redirect(DIRECTORIO_BASE."login");
     session_destroy();
 }
 //echo "bienvenido usuario con id : ".$_SESSION['nombre_usuario'];
