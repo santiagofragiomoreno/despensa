@@ -1,7 +1,13 @@
 .header{
 	background:#2c3e50;
 	color:#fff;
+	margin-top:1px;
 }
 body{
 	background:#6e9fd0;
+}
+.logo1{
+	height:80px;
+	margin-top:5px;
+	margin-bottom:5px;
 }
