@@ -82,13 +82,13 @@ if(isset($ruta[0])){
             break;
     }
 }
-
+include 'header.php';
 switch($pagina){
     case 0:
         include "login.php";
         break;
     case 1:
-        include 'header.php';
+        
         include "home.php";
         break;
     case 2:
