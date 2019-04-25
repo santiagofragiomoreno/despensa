@@ -15,9 +15,9 @@ if(isset($_POST['email']) && isset($_POST['contrasena'])){
         $_SESSION['id_usuario'] = $usuario->id;
         $_SESSION['email_usuario'] = $usuario->email;
         $_SESSION['nombre_usuario'] = $usuario->nombre;
-        redirect($directorio_base."home");
+        redirect(DIRECTORIO_BASE."home");
     }
     else{
-        redirect($directorio_base."login");
+        redirect(DIRECTORIO_BASE."login");
     }
 }

@@ -7,7 +7,7 @@
 if(isset($_SESSION['id_usuario'])){
     $hay_productos = false;
     //mandamos la info a la API
-    $argumentos = array( "url"        => $ruta_api."productos_disponibles/".$_SESSION['id_usuario']."/".token(),
+    $argumentos = array( "url"        => RUTA_API."productos_disponibles/".$_SESSION['id_usuario']."/".token(),
         "metodo"     => "POST",
         "argumentos" => array( "email"       => "",
                                "contrasena"  => "")
@@ -20,7 +20,7 @@ if(isset($_SESSION['id_usuario'])){
         $hay_productos = true;
     }
     else{
-        redirect($directorio_base."home");
+        redirect(DIRECTORIO_BASE."home");
     }
 }
 echo "estamos en productos con el id de usuario: ".$_SESSION['id_usuario'];
@@ -30,8 +30,8 @@ echo "estamos en productos con el id de usuario: ".$_SESSION['id_usuario'];
 </head>
 <body>
 
+<p>Producto:</p>
 	<ul>
-	<p>Producto:</p>
 		<?php if($hay_productos){?>
 			<?php for($i=0;$i<count($productos_disponibles);$i++){?>
 			<li>
@@ -44,7 +44,7 @@ echo "estamos en productos con el id de usuario: ".$_SESSION['id_usuario'];
 		<?php }?>
 	</ul>
 	<p>
-		<a href="<?php echo $directorio_base."home"?>">Atrás</a>
+		<a href="<?php echo DIRECTORIO_BASE."home"?>">Atrás</a>
 	</p>
 </body>
 </html>

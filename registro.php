@@ -4,7 +4,7 @@
  * de aqui nos vamos a realiza_registro.php
  */
 ?>
-<form action="<?php echo $directorio_base."realiza_registro"?>" method="POST">
+<form action="<?php echo DIRECTORIO_BASE."realiza_registro"?>" method="POST">
     <p> email </p>
 	<input type ="text" name="email">
 	<p> password </p>
