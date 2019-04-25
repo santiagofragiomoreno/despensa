@@ -83,7 +83,6 @@ if(isset($ruta[0])){
     }
 }
 include 'header.php';
-include 'footer.php';
 switch($pagina){
     case 0:
         include "login.php";
@@ -113,4 +112,5 @@ switch($pagina){
         include "comprueba_codigo.php";
         break;
 }
+include 'footer.php';
 ?>
