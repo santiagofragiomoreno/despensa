@@ -6,10 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/estilos.css">
 <title>Insert title here</title>
 </head>
 <body>
-	<p style="border: 1px solid #000">
-		<a href="<?php echo DIRECTORIO_BASE."home";?>">HOME</a>
-	</p>
+	<div class="container header">
+	<img alt="miwebdepruebas" src="img/logo_750.png">
+	</div>
 
