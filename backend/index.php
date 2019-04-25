@@ -33,8 +33,8 @@ if(isset($ruta[0])){
          break;
          default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
-             redirect(RUTA_BACKEND."backend_login.php");
-            break;
+             $pagina = 0;
+             break;
     }
 }
 switch($pagina){
