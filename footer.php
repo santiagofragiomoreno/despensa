@@ -5,10 +5,10 @@
 <script src="js/bootstrap.js"></script>
 <div class="container footer">
 <a href="#">
-<img src="https://img.icons8.com/windows/32/000000/facebook.png">
+<img class="color-favicon" src="https://img.icons8.com/windows/32/000000/facebook.png">
 </a>
 <a>
-<img src="https://img.icons8.com/windows/32/000000/instagram-new.png">
+<img class="color-favicon" src="https://img.icons8.com/windows/32/000000/instagram-new.png">
 </a>
 </div>
 </body>

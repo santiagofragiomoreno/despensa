@@ -18,10 +18,11 @@ if(isset($_POST['usuario'])){
 		<input type ="text" name="email">
 		<p> password </p>
 		<input type ="text" name="contrasena">
-		<button class="btn btn-primary"type="submit">ENVIAR</button>
+		<button class="btn btn-primary" type="submit">ENVIAR</button>
 	</form>
-</div>
+
 <p></p>
 <form action="<?php echo $directorio_base."registro"?>">
-	<button type="submit">REGISTARSE</button>
+	<button class="btn btn-primary" type="submit">REGISTARSE</button>
 </form>
+</div>
