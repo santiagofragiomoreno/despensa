@@ -3,7 +3,7 @@
 ?>
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="js/bootstrap.js"></script>
-<p style="border: 1px solid #000">footer</p>
+<img src="https://img.icons8.com/windows/32/000000/facebook.png">
 </body>
 
 </html>
