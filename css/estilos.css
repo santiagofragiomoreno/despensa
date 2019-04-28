@@ -19,9 +19,11 @@ body{
 }
 .header2{
 	background:#2c3e5066;
+	text-align:right;
 }
 .a_header2{
 	color:#fff;
+	margin-right:10px;
 }
 .a_header:hover{
 	color:#2c3e50;
