@@ -20,3 +20,9 @@ body{
 .header2{
 	background:#2c3e5066;
 }
+.a_header2{
+	color:#fff;
+}
+.a_header:hover{
+	color:#2c3e50;
+}
