@@ -9,7 +9,6 @@ const RUTA_API = "http://www.miwebdepruebas.es/API/";
 $ruta = explode("/",$_SERVER['REQUEST_URI']);
 $profundidad_directorios = 1;
 $directorio_base = "http://www.miwebdepruebas.es/";
-$ruta_api = "http://www.miwebdepruebas.es/API/";
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($ruta);
 }
