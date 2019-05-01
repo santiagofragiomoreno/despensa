@@ -4,7 +4,7 @@
 	margin-top:1px;
 }
 body{
-	background:#6e9fd0;
+	background:#339999;
 }
 .logo1{
 	height:80px;
@@ -29,5 +29,12 @@ body{
 	color:#2c3e50;
 }
 .home{
-	
+	background:#339999;
+	text-align:center;
+	text-align: center;
+    margin-top: 200px;
+}
+.logo-home{
+	whidth:9%;
+	text-ali
 }
