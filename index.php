@@ -73,6 +73,9 @@ if(isset($ruta[0])){
         case "comprueba_codigo":
             $pagina = 8;
             break;
+        case "home":
+            $pagina = 0;
+            break;
         default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
             redirect($directorio_base."home");
