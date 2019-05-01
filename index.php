@@ -39,10 +39,10 @@ if(isset($ruta[0])){
                 }
             }
             else{
-                redirect($directorio_base."login");
+                redirect($directorio_base."home");
             }
             break;
-        case "home":
+        case "menu":
             $pagina = 1;
             break;
         
@@ -76,7 +76,7 @@ if(isset($ruta[0])){
         default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
           
-                redirect($directorio_base."login");
+                redirect($directorio_base."home");
             
             break;
     }
@@ -84,11 +84,10 @@ if(isset($ruta[0])){
 include 'header.php';
 switch($pagina){
     case 0:
-        include "login.php";
+        include "home.php";
         break;
     case 1:
-        
-        include "home.php";
+        include "menu.php";
         break;
     case 2:
         include "comprueba_login.php";
@@ -110,6 +109,9 @@ switch($pagina){
         break;
     case 8:
         include "comprueba_codigo.php";
+        break;
+    case 9:
+        include "login.php";
         break;
 }
 include 'footer.php';
