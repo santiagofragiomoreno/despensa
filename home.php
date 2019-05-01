@@ -13,3 +13,6 @@
 	<div class="container home">
 		<img class="logo-home" alt="miwebdepruebas" src="img/logo_750.png">
 	</div>
+	<div class="container home">
+		<img src="https://via.placeholder.com/150">
+	</div>
