@@ -82,13 +82,15 @@ if(isset($ruta[0])){
             break;
     }
 }
-include 'header.php';
+
 switch($pagina){
     case 0:
         include "home.php";
         break;
     case 1:
+        include 'header.php';
         include "menu.php";
+        include 'footer.php';
         break;
     case 2:
         include "comprueba_login.php";
@@ -100,13 +102,19 @@ switch($pagina){
         include "realiza_registro.php";
         break;
     case 5:
+        include 'header.php';
         include "productos.php";
+        include 'footer.php';
         break;
     case 6:
+        include 'header.php';
         include "productos_disponibles.php";
+        include 'footer.php';
         break;
     case 7:
+        include 'header.php';
         include "info_producto.php";
+        include 'footer.php';
         break;
     case 8:
         include "comprueba_codigo.php";
@@ -115,5 +123,5 @@ switch($pagina){
         include "login.php";
         break;
 }
-include 'footer.php';
+
 ?>
