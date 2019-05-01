@@ -25,7 +25,7 @@ if(isset($ruta[0])){
                 $pagina = 2;
             }
             else{
-                $pagina = 0;
+                $pagina = 9;
             }
          break;
         case "comprueba_login":
@@ -39,7 +39,7 @@ if(isset($ruta[0])){
                 }
             }
             else{
-                redirect($directorio_base."home");
+                redirect($directorio_base."login");
             }
             break;
         case "menu":
@@ -75,9 +75,7 @@ if(isset($ruta[0])){
             break;
         default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
-          
-                redirect($directorio_base."home");
-            
+            redirect($directorio_base."home");
             break;
     }
 }
