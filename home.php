@@ -15,7 +15,7 @@
 	</div>
 	<div class="container imageneshome">
 		<img style="margin:10px;" alt="espana" src="img/es.png">
-		<img style="margin:10px;" src="https://via.placeholder.com/150">
-		<img style="margin:10px;" src="https://via.placeholder.com/150">
-		<img style="margin:10px;" src="https://via.placeholder.com/150">
+		<img style="margin:10px;" alt="portugal" src="img/pt.png">
+		<img style="margin:10px;" alt="francia" src="img/fr.png">
+		<img style="margin:10px;" alt="mexico" src="img/me.png">
 	</div>
