@@ -14,8 +14,8 @@
 		<img class="logo-home" alt="miwebdepruebas" src="img/logo_750.png">
 	</div>
 	<div class="container imageneshome">
-		<img src="https://via.placeholder.com/150">
-		<img src="https://via.placeholder.com/150">
-		<img src="https://via.placeholder.com/150">
-		<img src="https://via.placeholder.com/150">
+		<img class="imghome" src="https://via.placeholder.com/150">
+		<img class="imghome" src="https://via.placeholder.com/150">
+		<img class="imghome" src="https://via.placeholder.com/150">
+		<img class="imghome" src="https://via.placeholder.com/150">
 	</div>
