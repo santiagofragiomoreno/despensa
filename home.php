@@ -14,16 +14,16 @@
 		<img class="logo-home" alt="miwebdepruebas" src="img/logo_750.png">
 	</div>
 	<div class="container imageneshome">
-	    <a href="#">
-		<img class="imghome" alt="espana" src="img/espana.png">
+	    <a class="imghome" href="#">
+		<img alt="espana" src="img/espana.png">
 		</a>
-		<a href="#">
-		<img class="imghome" alt="portugal" src="img/portugal.png">
+		<a class="imghome" href="#">
+		<img alt="portugal" src="img/portugal.png">
 		</a>
-		<a href="#">
-		<img class="imghome" alt="francia" src="img/francia.png">
+		<a class="imghome" href="#">
+		<img alt="francia" src="img/francia.png">
 		</a>
-		<a href="#">
-		<img class="imghome" alt="mexico" src="img/mexico.png">
+		<a class="imghome" href="#">
+		<img alt="mexico" src="img/mexico.png">
 		</a>
 	</div>
