@@ -14,7 +14,7 @@
 		<img class="logo-home" alt="miwebdepruebas" src="img/logo_750.png">
 	</div>
 	<div class="container imageneshome">
-		<img style="margin:10px;" alt="espana" src="img/logo_750.png">
+		<img style="margin:10px;" alt="espana" src="img/es.png">
 		<img style="margin:10px;" src="https://via.placeholder.com/150">
 		<img style="margin:10px;" src="https://via.placeholder.com/150">
 		<img style="margin:10px;" src="https://via.placeholder.com/150">
