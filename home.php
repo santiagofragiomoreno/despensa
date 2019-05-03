@@ -15,15 +15,15 @@
 	</div>
 	<div class="container imageneshome">
 	    <a class="imghome" href="#">
-		<img alt="espana" src="img/espana.png">
+		<img style="width:150px;" alt="espana" src="img/espana.png">
 		</a>
 		<a class="imghome" href="#">
-		<img alt="portugal" src="img/portugal.png">
+		<img style="width:150px;" alt="portugal" src="img/portugal.png">
 		</a>
 		<a class="imghome" href="#">
-		<img alt="francia" src="img/francia.png">
+		<img style="width:150px;" alt="francia" src="img/francia.png">
 		</a>
 		<a class="imghome" href="#">
-		<img alt="mexico" src="img/mexico.png">
+		<img style="width:150px;" alt="mexico" src="img/mexico.png">
 		</a>
 	</div>
