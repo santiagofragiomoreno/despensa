@@ -14,7 +14,7 @@
 		<img class="logo-home" alt="miwebdepruebas" src="img/logo_750.png">
 	</div>
 	<div class="container imageneshome">
-	    <a class="imghome" href="#">
+	    <a class="imghome" href="<?php echo DIRECTORIO_BASE?>.home2">
 		<img style="width:150px; margin:10px;" alt="espana" src="img/espana.png">
 		</a>
 		<a class="imghome" href="#">

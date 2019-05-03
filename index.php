@@ -76,6 +76,9 @@ if(isset($ruta[0])){
         case "home":
             $pagina = 0;
             break;
+        case "home2":
+            $pagina = 10;
+            break;
         default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
             redirect($directorio_base."home");
@@ -121,6 +124,9 @@ switch($pagina){
         break;
     case 9:
         include "login.php";
+        break;
+    case 10:
+        include "home2.php";
         break;
 }
 
