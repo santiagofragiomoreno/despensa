@@ -126,7 +126,9 @@ switch($pagina){
         include "login.php";
         break;
     case 10:
+        include 'header.php';
         include "home2.php";
+        include 'footer.php';
         break;
 }
 
