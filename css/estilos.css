@@ -17,6 +17,10 @@ body{
 	margin-bottom:1px;
 	margin-top:20px;
 }
+.header1{
+	background:#2c3e5066;
+	text-align:left;
+}
 .header2{
 	background:#2c3e5066;
 	text-align:right;
