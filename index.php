@@ -2,13 +2,15 @@
 //----------------------------------------------
 session_start();
 include "functions.php";
-const DIRECTORIO_BASE = "http://www.miwebdepruebas.es/";
-const RUTA_API = "http://www.miwebdepruebas.es/API/";
+const DIRECTORIO_BASE = "http://localhost/despensa/";
+const RUTA_API = "http://localhost/despensas/API/";
+//const DIRECTORIO_BASE = "http://www.miwebdepruebas.es/";
+//const RUTA_API = "http://www.miwebdepruebas.es/API/";
 //convertimos la ruta introducida en el navegador 
 //a un array de tantos elemento como esten separados por / en la URL
 $ruta = explode("/",$_SERVER['REQUEST_URI']);
-$profundidad_directorios = 1;
-$directorio_base = "http://www.miwebdepruebas.es/";
+$profundidad_directorios = 2;
+//$directorio_base = "http://www.miwebdepruebas.es/";
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($ruta);
 }
@@ -35,11 +37,11 @@ if(isset($ruta[0])){
                     $pagina = 2;
                 }
                 else{
-                    redirect($directorio_base."login");
+                    redirect(DIRECTORIO_BASE."login");
                 }
             }
             else{
-                redirect($directorio_base."login");
+                redirect(DIRECTORIO_BASE."login");
             }
             break;
         case "menu":
@@ -67,7 +69,7 @@ if(isset($ruta[0])){
                 $pagina = 7;
             }
             else{
-                redirect($directorio_base."login");
+                redirect(DIRECTORIO_BASE."login");
             }
             break;
         case "comprueba_codigo":
@@ -81,11 +83,13 @@ if(isset($ruta[0])){
             break;
         default:
             //preguntamos si no existe el usuario.....le mandamos al login otra vez
-            redirect($directorio_base."home");
+            redirect(DIRECTORIO_BASE."home");
             break;
     }
 }
-
+else{
+    redirect(DIRECTORIO_BASE."home");
+}
 switch($pagina){
     case 0:
         include "home.php";
