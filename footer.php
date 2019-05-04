@@ -23,6 +23,7 @@
 <img src="https://img.icons8.com/windows/32/000000/instagram-new.png">
 </a>
 </div>
+<script type="text/javascript" src="js/functions.js"></script>
 </body>
 
 </html>
