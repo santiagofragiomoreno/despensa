@@ -2,14 +2,21 @@
 //----------------------------------------------
 session_start();
 include "functions.php";
+if($_SERVER['SERVER_NAME'] == "localhost"){
+    include "urlshost.php";
+    $profundidad_directorios = 2;
+}
+else{
+    include "urlsServer.php";
+    $profundidad_directorios = 1;
+}
 //const DIRECTORIO_BASE = "http://localhost/despensa/";
 //const RUTA_API = "http://localhost/despensas/API/";
-const DIRECTORIO_BASE = "http://www.miwebdepruebas.es/";
-const RUTA_API = "http://www.miwebdepruebas.es/API/";
+//const DIRECTORIO_BASE = "http://www.miwebdepruebas.es/";
+//const RUTA_API = "http://www.miwebdepruebas.es/API/";
 //convertimos la ruta introducida en el navegador 
 //a un array de tantos elemento como esten separados por / en la URL
 $ruta = explode("/",$_SERVER['REQUEST_URI']);
-$profundidad_directorios = 1;
 //$directorio_base = "http://www.miwebdepruebas.es/";
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($ruta);
