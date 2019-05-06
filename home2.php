@@ -12,20 +12,20 @@
 </div>
 <div>
 <ul id="c"> 
-		<li><p><strong>1</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p><strong>2</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p><strong>3</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p><strong>4</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/0000FF"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/FF0000"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/00FF00"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/F0F0F0"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
 
-		<li><p><strong>5</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p><strong>6</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p><strong>7</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p><strong>8</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/7F8FFF"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/1177BB"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
 
-		<li><p><strong>9</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p><strong>10</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p><strong>11</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p><strong>12</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
 
 </ul>
 </div>
