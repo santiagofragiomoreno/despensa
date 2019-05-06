@@ -2,7 +2,7 @@
  * 
  */
 window.onload = function(){
-var timer = 4000;
+var timer = 5000;
 
 var i = 0;
 var max = $('#c > li').length;
@@ -17,7 +17,7 @@ var max = $('#c > li').length;
 
 		$("#c > li").removeClass('active');
 
-		$("#c > li").eq(i).css('transition-delay','0.25s');
+		$("#c > li").eq(i).css('transition-delay','0.5s');
 		$("#c > li").eq(i + 1).css('transition-delay','0.5s');
 		$("#c > li").eq(i + 2).css('transition-delay','0.75s');
 		$("#c > li").eq(i + 3).css('transition-delay','1s');
