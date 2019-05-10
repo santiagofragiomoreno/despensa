@@ -10,23 +10,8 @@
 		</video> 
 	</div>
 </div>
-<div>
-<ul id="c"> 
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/0000FF"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/FF0000"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/00FF00"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/F0F0F0"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/7F8FFF"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/1177BB"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
-
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-		<li><p class="p_carrousel"><strong><img src="https://via.placeholder.com/150/red"></strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
-
-</ul>
+<div class="container" style="border:1px solid #000; heigth:50px;">
+<p>luflyflyf</p>
 </div>
+
 
