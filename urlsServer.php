@@ -1,4 +1,4 @@
 <?php
-const DIRECTORIO_BASE = "http://www.miwebdepruebas.es/";
-const RUTA_API = "http://www.miwebdepruebas.es/API/";
+const DIRECTORIO_BASE = "http://www.youitt.com/";
+const RUTA_API = "http://www.youitt.com/API/";
 ?>
