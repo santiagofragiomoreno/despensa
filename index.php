@@ -8,7 +8,7 @@ if($_SERVER['SERVER_NAME'] == "localhost"){
 }
 else{
     include "urlsServer.php";
-    $profundidad_directorios = 1;
+    $profundidad_directorios = 2;
 }
 //const DIRECTORIO_BASE = "http://localhost/despensa/";
 //const RUTA_API = "http://localhost/despensas/API/";

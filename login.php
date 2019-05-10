@@ -4,7 +4,7 @@
  * esta vista envia los campos de email
  * y password a comprueba_login.php
  */
-$directorio_base = "http://www.miwebdepruebas.es/";
+$directorio_base = "http://www.youitt.com/despensa/";
 if(isset($_POST['usuario'])){
     if(session_destroy()){
         $_SESSION['nombre_usuario']="sesion destruida";
@@ -22,7 +22,7 @@ if(isset($_POST['usuario'])){
 	</form>
 
 <p></p>
-<form action="<?php echo $directorio_base."registro"?>">
+<form action="<?php echo DIRECTORIO_BASE."registro"?>">
 	<button class="btn btn-primary" type="submit">REGISTARSE</button>
 </form>
 </div>

@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="container header">
-	<img class="logo1" alt="miwebdepruebas" src="img/logo_750.png">
+	<img class="logo1" alt="youitt.com" src="img/logo_750.png">
 	</div>
 	<div class="container div1">
 		<div class="div1-1">
