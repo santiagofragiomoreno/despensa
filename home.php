@@ -15,15 +15,15 @@
 	</div>
 	<div class="container imageneshome">
 	    <a class="imghome" href="<?php echo DIRECTORIO_BASE;?>home2">
-		<img style="width:150px; margin:10px;" alt="espana" src="img/espana.png">
+		<img style="width:150px; margin:10px;" alt="espana" src="img/es.png">
 		</a>
 		<a class="imghome" href="#">
-		<img style="width:150px; margin:10px;" alt="portugal" src="img/portugal.png">
+		<img style="width:150px; margin:10px;" alt="portugal" src="img/pt.png">
 		</a>
 		<a class="imghome" href="#">
-		<img style="width:150px; margin:10px;" alt="francia" src="img/francia.png">
+		<img style="width:150px; margin:10px;" alt="francia" src="img/mx.png">
 		</a>
 		<a class="imghome" href="#">
-		<img style="width:150px; margin:10px;" alt="mexico" src="img/mexico.png">
+		<img style="width:150px; margin:10px;" alt="mexico" src="img/eu.png">
 		</a>
 	</div>
