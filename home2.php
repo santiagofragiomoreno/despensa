@@ -10,8 +10,30 @@
 		</video> 
 	</div>
 </div>
-<div class="container" style="border:1px solid #000; heigth:50px;">
-<p>luflyflyf</p>
+<div class="slider">
+        <img src="http://placehold.it/1980x300/cccccc/ff0000?text=1" class="imagen">
+		<img src="http://placehold.it/1980x300/d3d22b/ff0000?text=2" class="imagen">
+		<img src="http://placehold.it/1980x300/ca6b6b;/00ff00?text=3" class="imagen">
+		<img src="http://placehold.it/1980x300/597fde/f0f0ff?text=4" class="imagen">
+		<a href="#" class="nav nav_left">&lt;</a>
+		<a href="#" class="nav nav_rigth">&gt;</a>
+		<?php // por si le queremos añadir los 4 puntitos blancos para elegir imagenes?>
+		<!--  
+		<ol class="dots">
+			<li>
+				<a href="#" class="dot activo"></a>
+			</li>
+			<li>
+				<a href="#" class="dot"></a>
+			</li>
+			<li>
+				<a href="#" class="dot"></a>
+			</li>
+			<li>
+				<a href="#" class="dot"></a>
+			</li>
+		</ol>
+		-->
 </div>
 
 
