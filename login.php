@@ -13,7 +13,7 @@ if(isset($_POST['usuario'])){
 }
 ?>
 <div class="container">
-	<form action="<?php echo $directorio_base."comprueba_login"?>" method="POST">
+	<form action="<?php echo DIRECTORIO_BASE."comprueba_login"?>" method="POST">
     	<p> email </p>
 		<input type ="text" name="email">
 		<p> password </p>

@@ -1,7 +1,14 @@
 <?php
 ///////// conexion BBDD ////////
-$conexion = new mysqli('localhost','u823703154_despe','santiago87','u823703154_despe');
-$conexion->set_charset('utf8');
+if($_SERVER['SERVER_NAME'] == "localhost"){
+    $conexion = new mysqli('localhost','root','','proyecto');
+    $conexion->set_charset('utf8');
+}
+else{
+    $conexion = new mysqli('localhost','u823703154_despe','santiago87','u823703154_despe');
+    $conexion->set_charset('utf8');
+}
+
 //comprobamos si no hay errores en la conexion
 if($conexion->connect_error){
     die ($conexion->connect_error);
@@ -15,7 +22,7 @@ if($conexion->connect_error){
  */
 //obtenemos la url y la separamos en un array
 $url = explode("/",$_SERVER['REQUEST_URI']);
-$profundidad_directorios = 2;
+$profundidad_directorios = 3;
 $msg  = array("error" => "Acceso Denegado");
 for($i=0;$i<$profundidad_directorios;$i++){
     array_shift($url);

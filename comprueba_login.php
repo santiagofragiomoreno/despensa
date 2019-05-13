@@ -1,8 +1,8 @@
 <?php
-$ruta_api = "http://www.miwebdepruebas.es/API/";
+//$ruta_api = "http://www.miwebdepruebas.es/API/";
 if(isset($_POST['email']) && isset($_POST['contrasena'])){
     //mandamos la info a la API
-    $argumentos = array( "url"        => $ruta_api."comprueba_login/".token(),
+    $argumentos = array( "url"        => RUTA_API."comprueba_login/".token(),
                          "metodo"     => "POST",
                          "argumentos" => array( "email"       => $_POST['email'],
                                                 "contrasena"  => $_POST['contrasena'])
@@ -15,7 +15,7 @@ if(isset($_POST['email']) && isset($_POST['contrasena'])){
         $_SESSION['id_usuario'] = $usuario->id;
         $_SESSION['email_usuario'] = $usuario->email;
         $_SESSION['nombre_usuario'] = $usuario->nombre;
-        redirect(DIRECTORIO_BASE."home");
+        redirect(DIRECTORIO_BASE."menu");
     }
     else{
         redirect(DIRECTORIO_BASE."login");

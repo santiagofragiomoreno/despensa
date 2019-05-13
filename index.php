@@ -5,10 +5,12 @@ include "functions.php";
 if($_SERVER['SERVER_NAME'] == "localhost"){
     include "urlshost.php";
     $profundidad_directorios = 2;
+    $test = 1;
 }
 else{
     include "urlsServer.php";
     $profundidad_directorios = 2;
+    $test = 0;
 }
 //const DIRECTORIO_BASE = "http://localhost/despensa/";
 //const RUTA_API = "http://localhost/despensas/API/";
