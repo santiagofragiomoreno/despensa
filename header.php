@@ -22,7 +22,7 @@
 			<a class=" header1 a_header2" href="#">Contacto</a>
 		</div>
 		<div class="div1-2">
-			<a class=" header2 a_header2" href="http://www.marca.com">Iniciar Sesion</a>
+			<a class=" header2 a_header2" href="<?php echo DIRECTORIO_BASE?>login">Iniciar Sesion</a>
 			<a class=" header2 a_header2" href="<?php DIRECTORIO_BASE?>registro">Registro</a>
 		</div>
 	</div>
