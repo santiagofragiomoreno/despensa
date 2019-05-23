@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 /*
  * pagina donde mostramos todo el consumo
  * relacionado con un producto y su usuario
@@ -42,7 +42,7 @@ if(isset($ruta[1]) && isset($ruta[2])){
 		<?php }?>
 	</ul>
 	<p>
-		<a href="<?php echo $directorio_base."home"?>">Atrás</a>
+		<a href="<?php echo DIRECTORIO_BASE."home"?>">Atrás</a>
 	</p>
 </body>
 </html>

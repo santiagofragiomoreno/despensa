@@ -39,9 +39,9 @@ echo "estamos en productos con el id de usuario: ".$_SESSION['id_usuario'];
 				<p> codigo: <?php echo $productos[$i]['codigo_producto'];?></p>
 				<p> peso: <?php echo $productos[$i]['peso'];?></p>
 			</li>
-			<form action="<?php echo DIRECTORIO_BASE."info_producto/".$_SESSION['id_usuario']."/".$productos[$i]['id'];?>" method="POST">
-				<button type="submit" value="info_producto">ver consumo</button> 
-			</form>
+			<p>
+		     <a href="<?php echo DIRECTORIO_BASE."info_producto/".$_SESSION['id_usuario']."/".$productos[$i]['id'];?>">ver consumo</a>
+	        </p>   
 			<?php }?>
 		<?php }?>
 	</ul>
