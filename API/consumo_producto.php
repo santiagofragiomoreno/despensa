@@ -3,13 +3,13 @@
  * pagina para consultar el consumo de un determinado producto
  * de un determinado usuario
 */
-if(isset($url[1]) && isset($_POST['id_producto'])){
+if(isset($_POST['usuario']) && isset($_POST['id_producto'])){
     //buscamos en la tabla productos, todos los productos de este usuario
     $success  = array("mensaje" => "ok");
     $error  = array("mensaje" => "ko");
     
     //realizamos la consulta
-    $consulta = "SELECT * FROM consumo_productos WHERE id_usuario ='.$url[1].' AND id_producto = '".$_POST['id_producto']."'";
+    $consulta = "SELECT * FROM consumo_productos WHERE id_usuario ='".$_POST['usuario']."' AND id_producto = '".$_POST['id_producto']."'";
     $consumo = array();
     $contador = 0;
     $resultado = $conexion->query($consulta);
