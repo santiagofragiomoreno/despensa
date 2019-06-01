@@ -95,10 +95,11 @@ if(($token-6)%7 == 0){
                     //el id lo tenemos en $id_consulta
                     include "consumo_producto.php";
                     break;
-                 /*
-                case 'ponencias':
-                    include "ponencias.php";
+                 
+                case 'consumo_dia':
+                    include "consumo_dia.php";
                     break;
+                    /*
                 case 'asistentes':
                     include "asistentes.php";
                     break;

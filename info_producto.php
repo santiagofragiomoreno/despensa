@@ -17,6 +17,18 @@ if(isset($ruta[1]) && isset($ruta[2])){
     $consumo = json_decode($consumo,true);
     if($consumo != null){
         $hay_productos = true;
+        $array_fecha = explode("-", $consumo[6]['fecha_consumo']);
+        $dia = explode(" ", $array_fecha[2]);
+        //calculamos el consumo total de un producto de todo un dia
+        //a traves de la API
+        //mandamos la info a la API
+        $argumentos = array( "url"        => RUTA_API."consumo_dia/".$ruta[1]."/".token(),
+                             "metodo"     => "POST",
+                             "argumentos" => array( "id_producto"       => $ruta[2],
+                                                    "usuario"           => $ruta[1]),
+                                                    "dia"               => $dia,
+        );
+        $consumo_dia = conexion($argumentos);
     }
     else{
         redirect(DIRECTORIO_BASE."login");
@@ -32,17 +44,24 @@ if(isset($ruta[1]) && isset($ruta[2])){
 <?php if($hay_productos){?>
 			<?php for($i=0;$i<count($consumo);$i++){?>
 			<li>
-				<p>Producto:</p>
-				
-				<p> fecha consumo: <?php echo $consumo[$i]['fecha_consumo'];?></p>
-				<p> consumo: <?php echo $consumo[$i]['consumo_producto'];?></p>
+				<p> fecha: <?php echo $consumo[$i]['fecha_consumo'];?></p>
+				<p> consumo: 
+				<?php if($consumo[$i]['consumo_producto'] < 0){?>
+				<p style="color:red"><?php echo $consumo[$i]['consumo_producto'];?> g.</p>
+				<?php }else{?>
+				<p style="color:green">+<?php  echo $consumo[$i]['consumo_producto'];?> g.</p>
+				<?php }?>
+				<hr style="margin-left: 0px; width:75%"/>
 			</li>
-			
+			<?php $consumo_total_dia?>
 			<?php }?>
 		<?php }?>
-	</ul>
+</ul>
+<div class="container">
+	<p>TOTAL CONSUMIDO EN EL DIA <?php echo $dia[0];?></p>
+</div>
 	<p>
-		<a href="<?php echo DIRECTORIO_BASE."home"?>">Atrás</a>
+		<a href="<?php echo DIRECTORIO_BASE."home"?>">Atras</a>
 	</p>
 </body>
 </html>
